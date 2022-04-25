@@ -71,7 +71,7 @@ async def pornhub(ctx, firstword, secondword):
     os.remove("image.png")
 ```
 ```python
- @bing.command()
+@bing.command()
 async def msghistory(ctx, number, channelid=None):
     try:
         if channelid == None:
