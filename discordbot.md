@@ -44,8 +44,51 @@ async def mine(ctx):
     elif data[user_num]['current_pick'] == "Miner x1000": 
       min = 2
       coin_num = 5
-    ...
 ```
+
+```python
+if (heist_user_num == 0) or (heist_user_num-1 == heist_partner_num) or (heist_user_num+1 == heist_partner_num) or (heist_user_num == heist_partner_num):
+      if heist_json[heist_user_num]['heist'] == "Burj Khalifa":
+        income = random.randint(1500,2500)
+      elif heist_json[heist_user_num]['heist'] == "The Louvre Museum":
+        income = random.randint(8000,11000)
+      elif heist_json[heist_user_num]['heist'] == "Emirates Palace":
+        income = random.randint(17000,23000)
+      elif heist_json[heist_user_num]['heist'] == "SoFi Stadium":
+        income = random.randint(30000,35000)
+      elif heist_json[heist_user_num]['heist'] == "The Great Mosque of Mecca":
+        income = random.randint(50000,65000)
+        
+      if rank_ == "Script Kitty":
+        income_float = income + (income*0.10)
+      elif rank_ == "Bitcoin Screenshotter":
+        income_float = income + (income*0.15)
+      elif rank_ == "NFT Miner":
+        income_float = income + (income*0.20)
+      income = income_float //2
+
+      
+      if rank_ == "Default" and chance <= 20:
+        failure = True
+      elif rank_ == "Script Kitty" and chance <= 18:
+        failure = True
+      elif rank_ == "Bitcoin Screenshotter" and chance <= 16:
+        failure = True
+      elif rank_ == "NFT Miner" and chance <= 14:
+        failure = True
+      
+      if failure is True:
+        for x in range(len(data)):
+          if data[x]["id"] == ctx.author.id:
+            user_num = x
+        new_bank = data[user_num]['bank'][0] - income
+        outdata = {"id": ctx.author.id, "name": str(ctx.author), "coin": data[user_num]['coin'], "bank": [int(new_bank), data[user_num]['bank'][1]], "spent": data[user_num]['spent'], "current_pick": data[user_num]['current_pick']}
+        data.pop(user_num)
+        data.append(outdata)
+        with open('economy.json', 'w') as out:
+          out.write(json.dumps(data))
+```
+
 
 > # Hypixel API 
 
@@ -83,5 +126,17 @@ async def weight(ctx, name):
 ```
 
 ```python
+async def bin(ctx, *, item):
+  try:
+    auction_data = requests.get("http://maro.skyblockextras.com/api/auctions/all").json()
+    for i in range(0,len(auction_data['data'])):
+      if auction_data['data'][i]['name'] == item or item.lower() == auction_data['data'][i]['name'].lower():
+        number = i
 
+    item_id = auction_data['data'][number]['id']
+    item_data = requests.get(f"http://maro.skyblockextras.com/api/auctions/quickStats/{item_id}").json()
+    embed = discord.Embed(title=auction_data['data'][number]['name'], description=item_id, color=0xC98FFC)
+    embed.add_field(name="Lowest BIN", value="{:,.0f} coins".format(auction_data['data'][number]['value']))
+    embed.add_field(name="Average Price", value="{:,.2f} coins".format(item_data['data']['average']))
+    embed.add_field(name="Highest Price", value="{:,.2f} coins".format(item_data['data']['max']))
 ```
