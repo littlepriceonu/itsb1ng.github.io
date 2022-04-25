@@ -11,7 +11,7 @@ subtitle: Discord Bot hosted by Sparked Host
 
 > # Accessibility to Slash Commands and Economy System
 
-> - Bot is hosted via Replit because I am broke and Economy system is loaded to json file
+> - Bot is hosted via SparkedHost because and Economy system is loaded to json file on Apollo Server
 > - bb!startmining to start the journey
 > - /help for all available commands
 
