@@ -15,10 +15,7 @@ author: itsb1ng
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  BingBot Discord Bot: "discordbot"
 
 # --- Logo --- #
 
@@ -39,13 +36,13 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "itsb1ng@gmail.com"
+  email: "itsb1ng611@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
+#  facebook: deanattali
   github: itsb1ng
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+#  twitter: daattali
+#  patreon: DeanAttali
+#  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -55,15 +52,15 @@ social-network-links:
 #  instagram: deanat78
 #  spotify: yourname
 #  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
+  steam: itsb1ng
+  twitch: itsb1ng
 #  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-#  discord: invite/invite_code or users/userid 
+  discord: https://discord.gg/d6TB9xUBgj
 #  kaggle: yourname
 
 # If you want your website to generate an RSS feed, provide a description
