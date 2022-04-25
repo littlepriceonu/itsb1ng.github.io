@@ -15,6 +15,36 @@ subtitle: Discord Bot hosted by Sparked Host
 > - bb!startmining to start the journey
 > - /help for all available commands
 
+```python
+async def mine(ctx):
+  ...
+  if account is True:
+    with open("storage/premium.json", "r") as premfile:
+        premium = json.load(premfile)
+    def return_key(val):
+      key_list=list(premium[0].keys())
+      val_list=list(premium[0].values())
+      for i in range(len(premium[0])):
+        if val_list[i]==val:
+          return key_list[i]
+          
+    for p in premium[0]:
+      for i in range(len(premium[0][p])):
+        if ctx.author.user.id == premium[0][p][i]:
+          rank_ = return_key(premium[0][p])
+    crate = 0
+    if data[user_num]['current_pick'] == "BingCoin Pickaxe":
+      min = 1
+      coin_num = 1
+    elif data[user_num]['current_pick'] == "BingCoin Drill": 
+      min = 1
+      coin_num = 2
+    elif data[user_num]['current_pick'] == "Miner x1000": 
+      min = 2
+      coin_num = 5
+    ...
+```
+
 > # Hypixel API 
 
 > - Uses Hypixel's API, Senither API, and SlothPixel API
