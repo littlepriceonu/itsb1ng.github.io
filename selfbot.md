@@ -120,6 +120,6 @@ async def msghistory(ctx, number, channelid=None):
 }]
 ```
 
-{. box-warning}
+{: .box-warning}
 ## Warning ⚠
 Self-Bots and its association are against [Discord TOS](https://discord.com/terms). With that in mind **I am not responsible for any punishments you may receive**
