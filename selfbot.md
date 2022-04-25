@@ -7,8 +7,10 @@ gh-badge: [star, fork, follow]
 ---
 > # BingBot Self-Bot
 > Simple Discord Self-Bot that contains Hypixel API capabilities
-
 > BingBot is a Self-Bot designed and coded by bing#0001. It offers some configuration and lists the available commands via commands.json
+
+
+| [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn}
 
 > # How to Install
 > 1. Run install.bat to reveal files and download proper python modules
@@ -86,20 +88,7 @@ async def msghistory(ctx, number, channelid=None):
             file.close()
             await ctx.send("Messages Loaded:", file=discord.File("messages.txt"))
             os.remove("messages.txt")
-        else:
-            channel = bing.get_channel(int(channelid))
-            user_messages = await channel.history(limit=int(number)).flatten()
-            file = open("messages.txt", "w")
-            user_messages.reverse()
-            for item in user_messages:
-                try:
-                    file.write(f"[{item.created_at.strftime('%m/%d/%Y, %H:%M:%S')}] {item.author.name}#{item.author.discriminator}: {item.content}\n")
-                except:
-                    pass
-            file.close()
-            await ctx.send("Messages Loaded:", file=discord.File("messages.txt"))
-            os.remove("messages.txt")
-        
+        ...        
     except:
         await ctx.send("`Could not get messages`")
 ```
