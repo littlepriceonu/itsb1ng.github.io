@@ -2,11 +2,13 @@
 layout: page
 title: BingBot Discord-Bot
 subtitle: Discord Bot hosted by Sparked Host
+gh-repo: itsb1ng/BingBot-Discord-Bot
+gh-badge: [star, fork, follow]
 ---
 > # BingBot Discord-Bot
 > Discord bot that conducts Hypixel API and Economy System
 
-> [Invite BingBot](https://discord.com/api/oauth2/authorize?client_id=541682385151066112&permissions=8&scope=bot%20applications.commands){: .btn} | [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn}{: style="text-align: center;"}
+> [Invite BingBot](https://discord.com/api/oauth2/authorize?client_id=541682385151066112&permissions=8&scope=bot%20applications.commands){: .btn} | [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn}
 
 
 > # Accessibility to Slash Commands and Economy System
