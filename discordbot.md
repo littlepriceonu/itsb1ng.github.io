@@ -13,7 +13,7 @@ gh-badge: [star, fork, follow]
 
 > # Accessibility to Slash Commands and Economy System
 
-> - Bot is hosted via SparkedHost because and Economy system is loaded to json file on Apollo Server
+> - Bot is hosted via SparkedHost and Economy system is loaded to json file on Apollo Server
 > - bb!startmining to start the journey
 > - /help for all available commands
 
