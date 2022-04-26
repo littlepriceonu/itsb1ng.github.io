@@ -10,7 +10,7 @@ gh-badge: [star, fork, follow]
 > BingBot is a Self-Bot designed and coded by bing#0001. It offers some configuration and lists the available commands via commands.txt
 
 
-| [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn}{: .mx-auto.d-block :}
+| [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn} | [GitHub Repo](https://github.com/itsb1ng/BingBot-Self-Bot/blob/main/BingBot.py){: .btn}
 
 > # How to Install
 > 1. Run install.bat to reveal files and download proper python modules

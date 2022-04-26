@@ -8,7 +8,7 @@ gh-badge: [star, fork, follow]
 > # BingBot Discord-Bot
 > Discord bot that conducts Hypixel API and Economy System
 
-> [Invite BingBot](https://discord.com/api/oauth2/authorize?client_id=541682385151066112&permissions=8&scope=bot%20applications.commands){: .btn} | [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn}
+> [Invite BingBot](https://discord.com/api/oauth2/authorize?client_id=541682385151066112&permissions=8&scope=bot%20applications.commands){: .btn} | [BingBot Official Discord](https://discord.gg/d6TB9xUBgj){: .btn} | [GitHub Repo](https://github.com/itsb1ng/BingBot-Discord-Bot/blob/main/main.py){: .btn}
 
 
 > # Accessibility to Slash Commands and Economy System
@@ -140,3 +140,6 @@ async def bin(ctx, *, item):
     embed.add_field(name="Average Price", value="{:,.2f} coins".format(item_data['data']['average']))
     embed.add_field(name="Highest Price", value="{:,.2f} coins".format(item_data['data']['max']))
 ```
+
+{: .box-note}
+**Note:** Code is not completely up to date testing is being further initiated
