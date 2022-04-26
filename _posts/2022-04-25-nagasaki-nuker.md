@@ -2,6 +2,9 @@
 layout: post
 title: Nagasaki Nuker
 subtitle: Python Script to Execute Processes via Discord Token
+thumbnail-img: /assets/img/nagnuker.png
+share-img: /assets/img/nagnuker.png
+cover-img: /assets/img/nagnukercode.png
 tags: [python]
 ---
 > Fetch members from Guild ID and send a message to each user
