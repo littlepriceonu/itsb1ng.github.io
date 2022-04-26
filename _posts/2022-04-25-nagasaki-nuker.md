@@ -25,8 +25,9 @@ def find_members(desired_guild, first_channel):
         return bing.gateway.session.guild(guild_id).members
 Credit: Exordium
 ```
+
 > Get User's payments
- 
+
 ```python
 def payment_source():
     source = bing.getPaymentSources().json()
