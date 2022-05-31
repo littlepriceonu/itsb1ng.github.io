@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nagasaki Nuker
-subtitle: Python Script to Execute Processes via Discord Token
+title: Hadez Stresser
+subtitle: Internet Stresser and Denial of Service Panel (Educational Purposes)
 thumbnail-img: /assets/img/hadez.jpg
 share-img: /assets/img/hadez_logo.png
 cover-img: /assets/img/hadez_login.png
