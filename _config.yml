@@ -15,8 +15,10 @@ author: itsb1ng
 
 navbar-links:
   About Me: "aboutme"
-  BingBot Discord Bot: "discordbot"
+  BingBot Discord Bot: "bingbot"
   BingBot Self-Bot: "selfbot"
+  Discord Bots: "discordbots.md"
+  Hire Me: "hire.md"
 
 # --- Logo --- #
 
