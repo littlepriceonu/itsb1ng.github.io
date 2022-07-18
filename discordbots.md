@@ -6,7 +6,7 @@ subtitle: Open Source Discord Bots
 > # ₦P Discord Bot
 > Bot to condust features similar to Skyblock Maniacs Discord Bot
 
-> [BingBot Official Discord](https://discord.gg/5VKkhgHUyS){: .btn}
+> [₦P Carries Discord](https://discord.gg/9h4WRePBgw){: .btn}
 
 
 > # Multi-Step Ticket for Skyblock Dungeon Carries
